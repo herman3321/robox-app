@@ -1,7 +1,12 @@
-
+import React from 'react';
+import { Monster } from '../../App';
 import './card-list.style.css';
 
-const Card =({monster}) => {
+type cardProps = {
+    monster: Monster
+}
+
+const Card =({monster}: cardProps) => {
     const{ name, email, id, phone, website}= monster;
     return (
             
